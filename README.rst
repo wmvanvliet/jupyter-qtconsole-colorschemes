@@ -9,12 +9,12 @@ Add ``*.py`` files to your Python distribution's
 or ``solarizeddark`` for the option ``c.IPythonWidget.syntax_style`` in your
 ``ipython_qtconsole_cofig.py`` file::
 
-    c.IPythonWidget.syntax_style = "solarizedlight"
+    c.IPythonWidget.syntax_style = "solarizeddark"
 
-For ``solarized.css`` file, and you
-can either start QT console with ``--stylesheet=solarized.css`` option or put
-path to the css file into the option ``c.IPythonQtConsoleApp.stylesheet' in
+For ``solarizeddark.css`` file, and you
+can either start QT console with ``--stylesheet=solarizeddark.css`` option or put
+path to the css file into the option ``c.IPythonQtConsoleApp.stylesheet`` in
 your ``ipython_qtconsole_config.py`` file::
 
-    c.IPythonQtConsoleApp.stylesheet = "solarized.css"
+    c.IPythonQtConsoleApp.stylesheet = "/path/to/solarizeddark.css"
 
