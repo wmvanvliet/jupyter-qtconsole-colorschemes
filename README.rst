@@ -1,6 +1,6 @@
-=================================
- IPython QtConsole Color Schemes
-=================================
+======================================
+ Color Schemes for IPython QT Console
+======================================
 
 Various color schemes for `IPython <http://ipython.org/>`_ QT Console.
 
