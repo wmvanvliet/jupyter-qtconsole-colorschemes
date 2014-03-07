@@ -5,7 +5,8 @@ A Pygments_ style based on the dark background variant of Solarized_.
 .. _Solarized: http://ethanschoonover.com/solarized
 """
 from pygments.style import Style
-from pygments.token import Token, Comment, Name, Keyword, Generic, Number, Operator, String
+from pygments.token import Token, Comment, Name, Keyword, Generic, Number
+from pygments.token import Operator, String, Text, Error
 
 BASE03 = '#002B36'
 BASE02 = '#073642'
@@ -25,11 +26,13 @@ CYAN = '#2AA198'
 GREEN = '#859900'
 
 class SolarizeddarkStyle(Style):
-
+    color = BASE1
     background_color = BASE03
     highlight_color = BASE01
 
     styles = {
+        Text: BASE1,
+
         Keyword: GREEN,
         Keyword.Constant: ORANGE,
         Keyword.Declaration: BLUE,
@@ -38,7 +41,7 @@ class SolarizeddarkStyle(Style):
         Keyword.Reserved: BLUE,
         Keyword.Type: RED,
 
-        #Name
+        Name: BASE1,
         Name.Attribute: BASE1,
         Name.Builtin: YELLOW,
         Name.Builtin.Pseudo: BLUE,
@@ -62,7 +65,7 @@ class SolarizeddarkStyle(Style):
         String: CYAN,
         String.Backtick: BASE01,
         String.Char: CYAN,
-        String.Doc: BASE1,
+        String.Doc: CYAN,
         #String.Double
         String.Escape: ORANGE,
         String.Heredoc: BASE1,

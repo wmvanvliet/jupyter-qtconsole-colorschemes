@@ -69,7 +69,7 @@ class SolarizedlightStyle(Style):
         String: CYAN,
         String.Backtick: BASE01,
         String.Char: CYAN,
-        String.Doc: BASE1,
+        String.Doc: CYAN,
         #String.Double
         String.Escape: ORANGE,
         String.Heredoc: BASE1,
