@@ -1,4 +1,4 @@
-QPlainTextEdit, QTextEdit { background-color: #ffffff;
+QPlainTextEdit, QTextEdit { background-color: #f8f8f8;
         color: #000000;
         selection-background-color: #c2e8ff;
         selection-color: #000000; }
