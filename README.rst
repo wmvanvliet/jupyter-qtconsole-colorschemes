@@ -4,7 +4,11 @@ Color Schemes for Jupyter Qt Console
 
     :Author: Joon Ro
     :Contact: joon.ro@outlook.com
-    :Date: <2015-10-14 Wed>
+    :Date: [2015-10-14 Wed]
+::
+
+    VERSION: 0.4.1
+
 Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ QT
 Console, but as of IPython 4.0, the qtconsole have moved to new project under
 the name Jupyter. 
@@ -35,7 +39,7 @@ You can ``cd`` into the directory, and install the module:
     python setup.py install 
 
 If you don't have write permission to the global site-packages directory or
-don't want to install into it, then use ``--user=`` option:u
+don't want to install into it, then use ``--user=`` option:
 
 .. code-block:: sh
 
@@ -72,3 +76,9 @@ If you are using older version of Qt Console, then add the following to
         "jupyter_qtconsole_colorschemes", "zenburn.css")
 
     c.IPythonWidget.syntax_style = "zenburn"
+
+Changelog
+---------
+
+0.4.1 <2015-10-14 Wed>
+~~~~~~~~~~~~~~~~~~~~~~
