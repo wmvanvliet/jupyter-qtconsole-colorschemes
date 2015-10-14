@@ -1,30 +1,74 @@
-======================================
- Color Schemes for IPython QT Console
-======================================
+====================================
+Color Schemes for Jupyter Qt Console
+====================================
 
-Various color schemes for `IPython <http://ipython.org/>`_ QT Console.
+    :Author: Joon Ro
+    :Contact: joon.ro@outlook.com
+    :Date: <2015-10-14 Wed>
+Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ QT
+Console, but as of IPython 4.0, the qtconsole have moved to new project under
+the name Jupyter. 
 
 List of color schemes
-=====================
+---------------------
 
-* Solarized (Light and Dark)
-* Tomorrow
-* Zenburn
+- `Solarized <http://ethanschoonover.com/solarized>`_ (Light: ``solarizedlight`` and Dark: ``solarizeddark``)
 
-HowTo
-=====
+- `Tomorrow <https://github.com/ChrisKempson/Tomorrow-Theme>`_: ``tomorrow``
 
-Add ``*.py`` files to your Python distribution's
-``/site-packages/pygments/styles`` folder. Then put the style names (e.g.:
-``solarizedlight`` or ``solarizeddark``) for the option
-``c.IPythonWidget.syntax_style`` in your ``ipython_qtconsole_cofig.py`` file::
+- `Zenburn <http://kippura.org/zenburnpage/>`_: ``zenburn``
 
-    c.IPythonWidget.syntax_style = "solarizeddark"
+Installation
+------------
 
-For the stylesheet (``.css``), you can either start QT console with
-``--stylesheet=solarizeddark.css`` option or put path to the css file into the
-option ``c.IPythonQtConsoleApp.stylesheet`` in your
-``ipython_qtconsole_config.py`` file::
+Thanks to `Antony Lee <https://bitbucket.org/anntzer/>`_, now the color schemes are in a module called
+``jupyter_qtconsole_colorschemes``. First clone the repo:
 
-    c.IPythonQtConsoleApp.stylesheet = "/path/to/solarizeddark.css"
+.. code-block:: sh
 
+    git clone https://joon@bitbucket.org/joon/color-schemes-for-ipython-qt-console.git
+
+You can ``cd`` into the directory, and install the module:
+
+.. code-block:: sh
+
+    python setup.py install 
+
+If you don't have write permission to the global site-packages directory or
+don't want to install into it, then use ``--user=`` option:u
+
+.. code-block:: sh
+
+    python setup.py install --user
+
+Usage
+-----
+
+Jupyter Qt Console
+~~~~~~~~~~~~~~~~~~
+
+In ``~/.jupyter/jupyter_qtconsole_config.py``, add the following with the color
+scheme name you want to use (the example shown with ``zenburn``):
+
+.. code-block:: python
+
+    import pkg_resources
+    c.JupyterQtConsoleApp.stylesheet = pkg_resources.resource_filename(
+        "jupyter_qtconsole_colorschemes", "zenburn.css")
+
+    c.JupyterWidget.syntax_style = 'zenburn'
+
+IPython Qt Console
+~~~~~~~~~~~~~~~~~~
+
+If you are using older version of Qt Console, then add the following to 
+``~/.ipython/profile_default/ipython_qtconsole_config.py``:
+
+.. code-block:: python
+
+    import pkg_resources
+
+    c.IPythonQtConsoleApp.stylesheet = pkg_resources.resource_filename(
+        "jupyter_qtconsole_colorschemes", "zenburn.css")
+
+    c.IPythonWidget.syntax_style = "zenburn"

@@ -2,17 +2,17 @@
 from setuptools import setup
 
 setup(
-    name="color-schemes-for-ipython-qtconsole",
-    version="0.0",
-    author="Joon Ro"
+    name="color-schemes-for-jupyter-qtconsole",
+    version="0.4.1",
+    author="Joon Ro",
     author_email="joon.ro@outlook.com",
     description="Color Schemes for Jupyter Qt Console",
-    packages=["ipython_colorschemes"],
-    package_data={"ipython_colorschemes": ["*.css"]},
+    packages=["jupyter_qtconsole_colorschemes"],
+    package_data={"jupyter_qtconsole_colorschemes": ["*.css"]},
     entry_points={"pygments.styles": [
-        "solarizeddark = ipython_colorschemes.solarizeddark:SolarizeddarkStyle",
-        "solarizedlight = ipython_colorschemes.solarizedlight:SolarizedlightStyle",
-        "tomorrow = ipython_colorschemes.tomorrow:TomorrowStyle",
-        "zenburn = ipython_colorschemes.zenburn:ZenburnStyle"]}
+        "solarizeddark = jupyter_qtconsole_colorschemes.solarizeddark:SolarizeddarkStyle",
+        "solarizedlight = jupyter_qtconsole_colorschemes.solarizedlight:SolarizedlightStyle",
+        "tomorrow = jupyter_qtconsole_colorschemes.tomorrow:TomorrowStyle",
+        "zenburn = jupyter_qtconsole_colorschemes.zenburn:ZenburnStyle"]}
 )
 
