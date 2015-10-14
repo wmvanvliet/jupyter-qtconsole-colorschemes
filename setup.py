@@ -2,10 +2,12 @@
 from setuptools import setup
 
 setup(
-    name="color-schemes-for-jupyter-qtconsole",
+    name="jupyter_qtconsole_colorschemes",
     version="0.4.1",
     author="Joon Ro",
     author_email="joon.ro@outlook.com",
+    url="https://bitbucket.org/joon/color-schemes-for-ipython-qt-console",
+    download_url="https://bitbucket.org/joon/color-schemes-for-ipython-qt-console/get/0.4.1.zip",
     description="Color Schemes for Jupyter Qt Console",
     packages=["jupyter_qtconsole_colorschemes"],
     package_data={"jupyter_qtconsole_colorschemes": ["*.css"]},
