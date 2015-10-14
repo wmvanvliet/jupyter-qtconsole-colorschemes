@@ -3,6 +3,7 @@ Color Schemes for Jupyter Qt Console
 ====================================
 
     :Author: Joon Ro
+    :Contact: joon.ro@outlook.com
 Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ QT
 Console, but as of IPython 4.0, the qtconsole have moved to new project under
 the name Jupyter. 
@@ -19,7 +20,8 @@ List of color schemes
 Installation
 ------------
 
-Thanks to `Antony Lee <https://bitbucket.org/anntzer/>`_, now the color schemes are in a module. After cloning the repo:
+Thanks to `Antony Lee <https://bitbucket.org/anntzer/>`_, now the color schemes are in a module called
+``jupyter_qtconsole_colorschemes``. First clone the repo:
 
 .. code-block:: sh
 

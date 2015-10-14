@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="color-schemes-for-jupyter-qtconsole",
-    version="0.0",
+    version="0.4.1",
     author="Joon Ro",
     author_email="joon.ro@outlook.com",
     description="Color Schemes for Jupyter Qt Console",
