@@ -4,16 +4,24 @@ Color Schemes for Jupyter Qt Console
 
     :Author: Joon Ro
     :Contact: joon.ro@outlook.com
-    :Date: Version 0.4.2, 2015-10-14 Wed
+    :Date: Version 0.5.1, 2015-10-14 Wed
 
-Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ QT
+Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ Qt
 Console, but as of IPython 4.0, the qtconsole have moved to new project under
 the name Jupyter.
 
 List of color schemes
 ---------------------
 
-- `Solarized <http://ethanschoonover.com/solarized>`_ (Light: ``solarizedlight`` and Dark: ``solarizeddark``)
+- `Base16 <https://github.com/chriskempson/base16>`_
+
+  - Ocean Dark (``base16_ocean_dark``)
+
+- `Solarized <http://ethanschoonover.com/solarized>`_
+
+  - Light (``solarizedlight``)
+
+  - Dark (``solarizeddark``)
 
 - `Tomorrow <https://github.com/ChrisKempson/Tomorrow-Theme>`_: ``tomorrow``
 
