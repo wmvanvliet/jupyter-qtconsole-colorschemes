@@ -5,10 +5,10 @@ Color Schemes for Jupyter Qt Console
     :Author: Joon Ro
     :Contact: joon.ro@outlook.com
     :Date: Version 0.5.1, 2015-10-14 Wed
-
 Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ Qt
 Console, but as of IPython 4.0, the qtconsole have moved to new project under
-the name Jupyter.
+the name Jupyter. Each color scheme consists of a ``.py`` file for the pygments
+style and a ``.css`` file for Qt Console specific color settings.
 
 List of color schemes
 ---------------------
@@ -17,7 +17,7 @@ List of color schemes
 
   - Ocean Dark (``base16_ocean_dark``)
 
-- `Solarized <http://ethanschoonover.com/solarized>`_
+- `Solarized <http://ethanschoonover.com/solarized>`_ 
 
   - Light (``solarizedlight``)
 
@@ -57,7 +57,7 @@ scheme name you want to use (the example shown with ``zenburn``):
 IPython Qt Console
 ~~~~~~~~~~~~~~~~~~
 
-If you are using older version of Qt Console, then add the following to
+If you are using older version of Qt Console, then add the following to 
 ``~/.ipython/profile_default/ipython_qtconsole_config.py``:
 
 .. code-block:: python
@@ -68,3 +68,8 @@ If you are using older version of Qt Console, then add the following to
         "jupyter_qtconsole_colorschemes", "zenburn.css")
 
     c.IPythonWidget.syntax_style = "zenburn"
+
+License
+-------
+
+Released under the `MIT License <https://bitbucket.org/joon/color-schemes-for-ipython-qt-console/src/master/README.rst>`_
