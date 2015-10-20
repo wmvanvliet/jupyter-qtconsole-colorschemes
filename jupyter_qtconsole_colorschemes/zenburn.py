@@ -1,12 +1,9 @@
-# -*- coding: utf-8 -*-
 """
-    pygments.styles.zenburn
-    ~~~~~~~~~~~~~~~~~~~~~~~
+A Pygments_ style based on the dark background variant of Zenburn_. Originally
+from https://github.com/litzomatic/MyVim
 
-    Zenburn color scheme.
-
-    :copyright: Copyright 2006-2010 by the Pygments team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
+.. _Pygments: http://pygments.org/
+.. _Zenburn: http://kippura.org/zenburnpage/
 """
 
 from pygments.style import Style
