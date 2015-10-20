@@ -1,3 +1,9 @@
+"""
+A Pygments_ style based on the light background variant of Solarized_.
+
+.. _Pygments: http://pygments.org/
+.. _Solarized: http://ethanschoonover.com/solarized
+"""
 from pygments.style import Style
 from pygments.token import Token, Comment, Name, Keyword, Generic, Number, Operator, String
 
