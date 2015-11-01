@@ -74,6 +74,7 @@ class SolarizeddarkStyle(Style):
         String.Regex: RED,
         #String.Single
         #String.Symbol
+
         Number: CYAN,
         #Number.Float
         #Number.Hex

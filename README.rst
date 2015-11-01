@@ -73,4 +73,4 @@ If you are using older version of Qt Console, then add the following to
 License
 -------
 
-Released under the `MIT License <https://bitbucket.org/joon/color-schemes-for-ipython-qt-console/src/master/README.rst>`_
+Released under the `MIT License <https://bitbucket.org/joon/color-schemes-for-ipython-qt-console/src/master/LICENSE>`_
