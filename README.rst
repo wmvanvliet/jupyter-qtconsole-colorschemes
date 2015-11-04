@@ -4,7 +4,7 @@ Color Schemes for Jupyter Qt Console
 
     :Author: Joon Ro
     :Contact: joon.ro@outlook.com
-    :Date: Version 0.5.4, 2015-10-31 SAT
+    :Date: Version 0.6.0, 2015-11-04 WED
            
 Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ Qt
 Console, but as of IPython 4.0, the qtconsole have moved to new project under
@@ -17,6 +17,8 @@ List of color schemes
 - `Base16 <https://github.com/chriskempson/base16>`_
 
   - Ocean Dark (``base16_ocean_dark``)
+
+- `monokai <http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/>`_ (``monokai``)
 
 - `Solarized <http://ethanschoonover.com/solarized>`_ 
 
@@ -49,11 +51,13 @@ scheme name you want to use (the example shown with ``zenburn``):
 
 .. code-block:: python
 
+    color_theme = 'zenburn'  # specify color theme
+
     import pkg_resources
     c.JupyterQtConsoleApp.stylesheet = pkg_resources.resource_filename(
-        "jupyter_qtconsole_colorschemes", "zenburn.css")
+        "jupyter_qtconsole_colorschemes", "{}.css".format(color_theme))
 
-    c.JupyterWidget.syntax_style = 'zenburn'
+    c.JupyterWidget.syntax_style = color_theme
 
 IPython Qt Console
 ~~~~~~~~~~~~~~~~~~
@@ -63,12 +67,13 @@ If you are using older version of Qt Console, then add the following to
 
 .. code-block:: python
 
+    color_theme = 'zenburn'  # specify color theme
+
     import pkg_resources
-
     c.IPythonQtConsoleApp.stylesheet = pkg_resources.resource_filename(
-        "jupyter_qtconsole_colorschemes", "zenburn.css")
+        "jupyter_qtconsole_colorschemes", "{}.css".format(color_theme))
 
-    c.IPythonWidget.syntax_style = "zenburn"
+    c.IPythonWidget.syntax_style = color_theme
 
 License
 -------
