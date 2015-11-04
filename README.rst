@@ -49,11 +49,13 @@ scheme name you want to use (the example shown with ``zenburn``):
 
 .. code-block:: python
 
+    color_theme = 'zenburn'  # specify color theme
+
     import pkg_resources
     c.JupyterQtConsoleApp.stylesheet = pkg_resources.resource_filename(
-        "jupyter_qtconsole_colorschemes", "zenburn.css")
+        "jupyter_qtconsole_colorschemes", "{}.css".format(color_theme))
 
-    c.JupyterWidget.syntax_style = 'zenburn'
+    c.JupyterWidget.syntax_style = color_theme
 
 IPython Qt Console
 ~~~~~~~~~~~~~~~~~~
@@ -63,12 +65,13 @@ If you are using older version of Qt Console, then add the following to
 
 .. code-block:: python
 
+    color_theme = 'zenburn'  # specify color theme
+
     import pkg_resources
-
     c.IPythonQtConsoleApp.stylesheet = pkg_resources.resource_filename(
-        "jupyter_qtconsole_colorschemes", "zenburn.css")
+        "jupyter_qtconsole_colorschemes", "{}.css".format(color_theme))
 
-    c.IPythonWidget.syntax_style = "zenburn"
+    c.IPythonWidget.syntax_style = color_theme
 
 License
 -------
