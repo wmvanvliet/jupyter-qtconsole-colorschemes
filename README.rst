@@ -18,6 +18,8 @@ List of color schemes
 
   - Ocean Dark (``base16_ocean_dark``)
 
+- `monokai <http://www.monokai.nl/blog/2006/07/15/textmate-color-theme/>`_ (``monokai``)
+
 - `Solarized <http://ethanschoonover.com/solarized>`_ 
 
   - Light (``solarizedlight``)
