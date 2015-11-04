@@ -38,7 +38,7 @@ BASE2=TEMP02
 BASE3=TEMP03
 
 class SolarizedlightStyle(Style):
-
+    color = BASE0
     background_color = BASE03
     highlight_color = BASE01
 
