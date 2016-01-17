@@ -32,7 +32,7 @@ class ZenburnStyle(Style):
         
         Comment: "italic #7f9f7f",
         #Comment.Multiline
-        #Comment.Preproc
+        Comment.Preproc: "bold #ffcfaf"  # IF, ELSE, ELIF
         #Comment.Single
         #Comment.Special
 
@@ -41,8 +41,8 @@ class ZenburnStyle(Style):
         Keyword.Declaration: "#000000",
         Keyword.Namespace: "bold #dfaf8f",
         #Keyword.Pseudo
-        #Keyword.Reserved
-        #Keyword.Type
+        Keyword.Reserved: "bold #dfaf8f"  # extern, inline
+        Keyword.Type: "bold #dfaf8f"  # some type declarations in cdef
 
         Operator: "#f0efd0",
         #Operator.Word
@@ -55,7 +55,7 @@ class ZenburnStyle(Style):
         Name.Builtin.Pseudo: "#efef8f",
         Name.Class: "#efef8f",
         Name.Constant: "#000000",
-        Name.Decorator: "#000000",
+        Name.Decorator: "#efef8f",
         Name.Entity: "#000000",
         Name.Exception: "bold #c3bf9f",
         Name.Function: "#efef8f",
