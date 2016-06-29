@@ -1,64 +1,59 @@
 """
-A Pygments_ style based on the dark background variant of Zenburn_. Originally
-from https://github.com/litzomatic/MyVim
+A Pygments_ style based on the light background variant of Emacs material_ light. 
 
 .. _Pygments: http://pygments.org/
-.. _Zenburn: http://kippura.org/zenburnpage/
+.. _material: https://github.com/cpaulik/emacs-material-theme
 """
 
 from pygments.style import Style
 from pygments.token import Keyword, Name, Comment, String, Error, Text, \
      Number, Operator, Generic, Whitespace, Punctuation, Other, Literal
 
-class ZenburnStyle(Style):
-    """
-    This style mimics the Zenburn color scheme.
-    """
-
-    background_color = "#3f3f3f"
-    highlight_color = "#838383"
+class MaterialLightStyle(Style):
+    background_color = "#fafafa"
+    highlight_color = "#90a4ae"
 
     styles = {
         # No corresponding class for the following:
-        Text:                      "#dcdccc",
+        Text:                      "#212121",
         # Whitespace:                "#000000",
-        Error:                     "#80d4aa bg:#2f2f2f",
+        Error:                     "#b71c1c",
         # Other:                     "#000000",
 
-        Keyword:                   "bold #f0dfaf",
-        Keyword.Constant:          "#dca3a3",
+        Keyword:                   "#00796b",
+        Keyword.Constant:          "#689f38",  # e.g., None
         # Keyword.Declaration:       "#000000",
-        Keyword.Namespace:         "bold #dfaf8f",
+        Keyword.Namespace:         "#00796b",
         # Keyword.Pseudo:            "#000000",
-        Keyword.Reserved:          "bold #dfaf8f",
-        Keyword.Type:              "bold #dfaf8f",
+        Keyword.Reserved:          "#00796b",
+        Keyword.Type:              "#b71c1c",
 
-        Name:                      "#dcdccc",
+        Name:                      "#212121",
         # Name.Attribute:            "#000000",
-        Name.Builtin:              "#efef8f",
-        Name.Builtin.Pseudo:       "#efef8f",
-        Name.Class:                "#efef8f",
+        Name.Builtin:              "#212121",
+        Name.Builtin.Pseudo:       "#00796b",  # e.g., self
+        Name.Class:                "#0097a7",
         # Name.Constant:             "#000000",
-        Name.Decorator:            "#efefef",
+        Name.Decorator:            "bold #ce537a",
         # Name.Entity:               "#000000",
-        Name.Exception:            "bold #c3bf9f",
-        Name.Function:             "#efef8f",
-        # Name.Label:                "#000000",
-        Name.Namespace:            "#8fbede",
+        Name.Exception:            "#b71c1c",
+        Name.Function:             "#0097a7",
+        Name.Label:                "#2196f3",
+        Name.Namespace:            "#212121",
         # Name.Other:                "#000000",
         # Name.Tag:                  "#000000",
-        Name.Variable:             "bold #ffcfaf",
-        Name.Variable.Class:       "#efef8f",
+        Name.Variable:             "#ef6c00",
+        # Name.Variable.Class:       "#000000",  
         # Name.Variable.Global:      "#000000",
         # Name.Variable.Instance:    "#000000",
 
         # Literal:                   "#000000",
         # Literal.Date:              "#000000",
 
-        String:                    "#cc9393",
+        String:                    "#689f38",
         # String.Backtick:           "#000000",
-        String.Char:               "bold #dca3a3",
-        # String.Doc:                "italic #7f9f7f",
+        # String.Char:               "#2d9574",
+        String.Doc:                "#672ab7",
         # String.Double:             "#000000",
         # String.Escape:             "#000000",
         # String.Heredoc:            "#000000",
@@ -68,22 +63,22 @@ class ZenburnStyle(Style):
         # String.Single:             "#000000",
         # String.Symbol:             "#000000",
 
-        Number:                    "#8cd0d3",
+        Number:                    "#212121",
         #Number.Float:              "#000000",
         #Number.Hex:                "#000000",
         #Number.Integer:            "#000000",
         #Number.Integer.Long:       "#000000",
         #Number.Oct:                "#000000",
 
-        Operator:                  "#f0efd0",
-        Operator.Word:             "#f0efd0",
+        Operator:                  "#212121",
+        Operator.Word:             "#212121",
 
-        Punctuation:               "#8f8f8f",
+        Punctuation:               "#0097a7",
 
-        Comment:                   "italic #7f9f7f",
-        Comment.Hashbang:          "italic #7f9f7f",
+        Comment:                   "#607d8b",
+        # Comment.Hashbang:          "#000000",
         # Comment.Multiline:         "#000000",
-        Comment.Preproc:           "bold #ffcfaf",
+        # Comment.Preproc:           "#000000",
         # Comment.Single:            "#000000",
         # Comment.Special:           "#000000",
 
