@@ -13,6 +13,7 @@ setup(
     package_data={"jupyter_qtconsole_colorschemes": ["*.css"]},
     entry_points={"pygments.styles": [
         "base16_ocean_dark = jupyter_qtconsole_colorschemes.base16_ocean_dark:Base16OceanDarkStyle",
+        'material_light = jupyter_qtconsole_colorschemes.material_light:MaterialLightStyle',
         "solarizeddark = jupyter_qtconsole_colorschemes.solarizeddark:SolarizeddarkStyle",
         "solarizedlight = jupyter_qtconsole_colorschemes.solarizedlight:SolarizedlightStyle",
         "tomorrow = jupyter_qtconsole_colorschemes.tomorrow:TomorrowStyle",
