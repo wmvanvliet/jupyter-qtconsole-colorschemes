@@ -6,7 +6,7 @@ setup(
     version="0.7.0",
     author="Joon Ro",
     author_email="joon.ro@outlook.com",
-    url="https://bitbucket.org/joon/color-schemes-for-ipython-qt-console",
+    url="https://bitbucket.org/joon/color-schemes-for-jupyter-qt-console",
     download_url="https://bitbucket.org/joon/color-schemes-for-jupyter-qt-console/get/v0.7.0.zip",
     description="Color Schemes for Jupyter Qt Console",
     packages=["jupyter_qtconsole_colorschemes"],
