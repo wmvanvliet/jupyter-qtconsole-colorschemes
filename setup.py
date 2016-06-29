@@ -3,11 +3,11 @@ from setuptools import setup
 
 setup(
     name="jupyter_qtconsole_colorschemes",
-    version="0.7.0",
+    version="0.7.1",
     author="Joon Ro",
     author_email="joon.ro@outlook.com",
-    url="https://bitbucket.org/joon/color-schemes-for-ipython-qt-console",
-    download_url="https://bitbucket.org/joon/color-schemes-for-jupyter-qt-console/get/v0.7.0.zip",
+    url="https://bitbucket.org/joon/color-schemes-for-jupyter-qt-console",
+    download_url="https://bitbucket.org/joon/color-schemes-for-jupyter-qt-console/get/v0.7.1.zip",
     description="Color Schemes for Jupyter Qt Console",
     packages=["jupyter_qtconsole_colorschemes"],
     package_data={"jupyter_qtconsole_colorschemes": ["*.css"]},
