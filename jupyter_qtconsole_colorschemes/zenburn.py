@@ -47,7 +47,7 @@ class ZenburnStyle(Style):
         Name.Namespace:            "#8fbede",
         # Name.Other:                "#000000",
         # Name.Tag:                  "#000000",
-        # Name.Variable:             "#000000",
+        Name.Variable:             "bold #ffcfaf",
         Name.Variable.Class:       "#efef8f",
         # Name.Variable.Global:      "#000000",
         # Name.Variable.Instance:    "#000000",
