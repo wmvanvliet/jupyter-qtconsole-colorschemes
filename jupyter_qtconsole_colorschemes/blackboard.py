@@ -1,8 +1,8 @@
 """
-A Pygments_ style based on the dark background variant of Solarized_.
+A Pygments_ style based on the blackboard theme of TextMate_.
 
-.. _Pygments: http://pygments.org/
-.. _Solarized: http://ethanschoonover.com/solarized
+.. _Pygments: http://pygments.org
+.. _TextMate: https://macromates.com
 """
 from pygments.style import Style
 from pygments.token import Token, Comment, Name, Keyword, Generic, Number
