@@ -17,4 +17,5 @@ setup(
         "solarizeddark = jupyter_qtconsole_colorschemes.solarizeddark:SolarizeddarkStyle",
         "solarizedlight = jupyter_qtconsole_colorschemes.solarizedlight:SolarizedlightStyle",
         "tomorrow = jupyter_qtconsole_colorschemes.tomorrow:TomorrowStyle",
-        "zenburn = jupyter_qtconsole_colorschemes.zenburn:ZenburnStyle"]})
+        "zenburn = jupyter_qtconsole_colorschemes.zenburn:ZenburnStyle",
+        "blackboard = jupyter_qtconsole_colorschemes.blackboard:BlackboardStyle"]})
