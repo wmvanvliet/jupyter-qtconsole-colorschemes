@@ -4,7 +4,7 @@ Color Schemes for Jupyter Qt Console
 
     :Author: Joon Ro
     :Contact: joon.ro@outlook.com
-    :Date: Version 0.7.1, 2016-06-28 TUE
+    :Date: 2016-06-28 TUE
 
 Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ Qt
 Console, but as of IPython 4.0, the language-agnostic parts of the project
