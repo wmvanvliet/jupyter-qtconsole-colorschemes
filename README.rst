@@ -21,6 +21,8 @@ My current favorites are ``material-light`` and Base16 Ocean Dark.
 
   - Ocean Dark (``base16_ocean_dark``)
 
+- Blackboard (``blackboard``, thanks to `Marijn van Vliet <https://bitbucket.org/wmvanvliet/>`_)
+
 - `Material Theme for Emacs <https://github.com/cpaulik/emacs-material-theme>`_
 
   - Light (``material_light``)
@@ -43,8 +45,7 @@ Installation
 Thanks to `Antony Lee <https://bitbucket.org/anntzer/>`_, now the color schemes are in a module called
 ``jupyter_qtconsole_colorschemes``. You can install it with ``pip``:
 
-.. code-block:: sh
-    :number-lines: 0
+.. code:: sh
 
     pip install jupyter_qtconsole_colorschemes
 
@@ -57,8 +58,7 @@ Jupyter Qt Console
 In ``~/.jupyter/jupyter_qtconsole_config.py``, add the following with the color
 scheme name you want to use (the example shown with ``zenburn``):
 
-.. code-block:: python
-    :number-lines: 0
+.. code:: python
 
     color_theme = 'zenburn'  # specify color theme
 
@@ -74,8 +74,7 @@ IPython Qt Console
 If you are using older version of Qt Console, then add the following to 
 ``~/.ipython/profile_default/ipython_qtconsole_config.py``:
 
-.. code-block:: python
-    :number-lines: 0
+.. code:: python
 
     color_theme = 'zenburn'  # specify color theme
 
