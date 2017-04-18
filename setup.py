@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-VERSION="0.8.0"
+VERSION="0.8.1"
 AUTHOR="Joon Ro"
 EMAIL="joon.ro@outlook.com"
 DESC="Color Schemes for Jupyter Qt Console"
