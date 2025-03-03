@@ -62,7 +62,7 @@ class BlackboardStyle(Style):
         String: bright_green,
         #String.Backtick
         #String.Char
-        #String.Doc
+        String.Doc: medium_grey,
         #String.Double
         #String.Escape
         #String.Heredoc
@@ -79,7 +79,7 @@ class BlackboardStyle(Style):
         #Number.Integer.Long
         #Number.Oct
 
-        #Operator
+        Operator: yolk_yellow,
         #Operator.Word
 
         #Punctuation
