@@ -8,19 +8,19 @@ from pygments.style import Style
 from pygments.token import Token, Comment, Name, Keyword, Generic, Number
 from pygments.token import Operator, String, Text, Error
 
-white            = '#ffffff'
-bright_orange    = '#f26512'
-yolk_yellow      = '#f8d734'
-lemon_yellow     = '#BBF34E'
-bright_green     = '#62d04e'
-dark_green       = '#0B3222'
-dark_red         = '#370B22'
-medium_grey      = '#AEAEAE'
-really_dark_blue = '#0d152c'
-dark_blue        = '#181f35'
-medium_blue      = '#172247'
-light_blue       = '#84A7C1'
-vivid_blue       = '#36428a'
+white            = '#ffffff nobold noitalic'
+bright_orange    = '#f26512 nobold noitalic'
+yolk_yellow      = '#f8d734 nobold noitalic'
+lemon_yellow     = '#BBF34E nobold noitalic'
+bright_green     = '#62d04e nobold noitalic'
+dark_green       = '#0B3222 nobold noitalic'
+dark_red         = '#370B22 nobold noitalic'
+medium_grey      = '#AEAEAE nobold noitalic'
+really_dark_blue = '#0d152c nobold noitalic'
+dark_blue        = '#181f35 nobold noitalic'
+medium_blue      = '#172247 nobold noitalic'
+light_blue       = '#84A7C1 nobold noitalic'
+vivid_blue       = '#36428a nobold noitalic'
 
 class BlackboardStyle(Style):
     color = white
@@ -97,11 +97,13 @@ class BlackboardStyle(Style):
         #Generic.Heading
         #Generic.Inserted
         #Generic.Output
-        #Generic.Prompt
+        Generic.Prompt: medium_grey,
         Generic.Strong: 'bold',
         #Generic.Subheading
         #Generic.Traceback
 
         #Token
         #Token.Other
+        Token.Prompt: medium_grey,
+        Token.PromptNum: medium_grey,
     }
