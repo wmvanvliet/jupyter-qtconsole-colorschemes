@@ -38,7 +38,7 @@ class BlackboardStyle(Style):
         #Keyword.Reserved
         Keyword.Type: light_blue,
 
-        #Name
+        Name: white,
         #Name.Attribute
         Name.Builtin: light_blue,
         #Name.Builtin.Pseudo
@@ -49,7 +49,7 @@ class BlackboardStyle(Style):
         #Name.Exception
         Name.Function: bright_orange,
         #Name.Label
-        #Name.Namespace
+        Name.Namespace: white,
         #Name.Other
         #Name.Tag
         #Name.Variable
@@ -80,7 +80,7 @@ class BlackboardStyle(Style):
         #Number.Oct
 
         Operator: yolk_yellow,
-        #Operator.Word
+        Operator.Word: yolk_yellow,
 
         #Punctuation
 
@@ -106,4 +106,8 @@ class BlackboardStyle(Style):
         #Token.Other
         Token.Prompt: medium_grey,
         Token.PromptNum: medium_grey,
+        Token.OutPrompt: medium_grey,
+        Token.OutPromptNum: medium_grey,
+        Token.RemotePrompt: medium_grey,
+        Token.RemotePromptNum: medium_grey,
     }
