@@ -45,13 +45,13 @@ class BlackboardStyle(Style):
         Name.Class: bright_orange,
         Name.Constant: lemon_yellow,
         #Name.Decorator
-        #Name.Entity
-        #Name.Exception
+        Name.Entity: white,
+        Name.Exception: light_blue,
         Name.Function: bright_orange,
-        #Name.Label
+        Name.Label: white,
         Name.Namespace: white,
-        #Name.Other
-        #Name.Tag
+        Name.Other: white,
+        Name.Tag: white,
         #Name.Variable
         #Name.Variable.Class
         #Name.Variable.Global
@@ -100,7 +100,7 @@ class BlackboardStyle(Style):
         Generic.Prompt: medium_grey,
         Generic.Strong: 'bold',
         #Generic.Subheading
-        #Generic.Traceback
+        Generic.Traceback: medium_grey,
 
         #Token
         #Token.Other
