@@ -2,9 +2,7 @@
 Color Schemes for Jupyter Qt Console
 ====================================
 
-    :Author: Joon Ro
-    :Contact: joon.ro@outlook.com
-    :Date: [2017-04-17 Mon]
+Original author: Joon Ro, this repo was forked by Marijn van Vliet.
 
 Various color schemes for `Jupyter <http://jupyter.org>`_ `Qt Console <http://jupyter.org/qtconsole>`_. It was originally for `IPython <http://ipython.org>`_ Qt
 Console, but as of IPython 4.0, the language-agnostic parts of the project
@@ -52,39 +50,23 @@ Thanks to `Antony Lee <https://bitbucket.org/anntzer/>`_, now the color schemes 
 Usage
 -----
 
-Jupyter Qt Console
-~~~~~~~~~~~~~~~~~~
-
 In ``~/.jupyter/jupyter_qtconsole_config.py``, add the following with the color
 scheme name you want to use (the example shown with ``zenburn``):
 
 .. code:: python
 
-    color_theme = 'zenburn'  # specify color theme
+    color_theme = 'blackboard'  # specify color theme
 
-    import pkg_resources
-    c.JupyterQtConsoleApp.stylesheet = pkg_resources.resource_filename(
-        "jupyter_qtconsole_colorschemes", "{}.css".format(color_theme))
-
+    import importlib.util
+    spec = importlib.util.find_spec("jupyter_qtconsole_colorschemes")
+    if spec is None or not spec.submodule_search_locations:
+        raise ImportError("jupyter_qtconsole_colorschemes not found")
+    c.JupyterQtConsoleApp.stylesheet = f"{spec.submodule_search_locations[0]}/{color_theme}.css"
     c.JupyterWidget.syntax_style = color_theme
 
-IPython Qt Console
-~~~~~~~~~~~~~~~~~~
 
-If you are using older version of Qt Console, then add the following to 
-``~/.ipython/profile_default/ipython_qtconsole_config.py``:
-
-.. code:: python
-
-    color_theme = 'zenburn'  # specify color theme
-
-    import pkg_resources
-    c.IPythonQtConsoleApp.stylesheet = pkg_resources.resource_filename(
-        "jupyter_qtconsole_colorschemes", "{}.css".format(color_theme))
-
-    c.IPythonWidget.syntax_style = color_theme
 
 License
 -------
 
-Released under the `MIT License <https://bitbucket.org/joon/color-schemes-for-ipython-qt-console/src/master/LICENSE>`_
+Released under the `MIT License <LICENSE>`_
