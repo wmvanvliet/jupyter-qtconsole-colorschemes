@@ -19,7 +19,7 @@ My current favorites are ``material-light`` and Base16 Ocean Dark.
 
   - Ocean Dark (``base16_ocean_dark``)
 
-- Blackboard (``blackboard``, thanks to `Marijn van Vliet <https://bitbucket.org/wmvanvliet/>`_)
+- Blackboard (``blackboard``, thanks to `Marijn van Vliet <https://github.com/wmvanvliet/>`_)
 
 - `Material Theme for Emacs <https://github.com/cpaulik/emacs-material-theme>`_
 
@@ -55,7 +55,7 @@ scheme name you want to use (the example shown with ``zenburn``):
 
 .. code:: python
 
-    color_theme = 'blackboard'  # specify color theme
+    color_theme = 'zenburn'  # specify color theme
 
     import importlib.util
     spec = importlib.util.find_spec("jupyter_qtconsole_colorschemes")
