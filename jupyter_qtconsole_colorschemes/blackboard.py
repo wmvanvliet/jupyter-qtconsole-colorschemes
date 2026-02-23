@@ -102,7 +102,7 @@ class BlackboardStyle(Style):
         #Generic.Subheading
         Generic.Traceback: medium_grey,
 
-        #Token
+        Token: white,
         #Token.Other
         Token.Prompt: medium_grey,
         Token.PromptNum: medium_grey,
@@ -110,4 +110,23 @@ class BlackboardStyle(Style):
         Token.OutPromptNum: medium_grey,
         Token.RemotePrompt: medium_grey,
         Token.RemotePromptNum: medium_grey,
+
+        Token.Header: medium_grey,
+        Token.LinenoEm: medium_grey + " bg:#181f35",
+        Token.Lineno: medium_grey,
+        Token.ValEm: light_blue,
+        Token.VName: light_blue,
+        Token.Caret: yolk_yellow,
+        Token.ExcName: light_blue,
+        Token.Topline: bright_orange,
+        Token.Filename: white,
+        Token.FilenameEm: white,
+        Token.Normal: white,
+        Token.NormalEm: white,
+        Token.Line: white,
+        Token.TB.Name: "ansired",
+        Token.TB.NameEm: "ansibrightred",
+        Token.Breakpoint: white,
+        Token.Breakpoint.Enabled: "ansibrightred",
+        Token.Breakpoint.Disabled: "ansired",
     }
