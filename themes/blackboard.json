@@ -1,0 +1,12 @@
+{
+  "name": "blackboard",
+  "base": "blackboard",
+  "extra_style": {
+    "TbHighlight": "bg:#181f35"
+  },
+  "symbols": {
+    "top_line": "─",
+    "arrow_body": "─",
+    "arrow_head": "▶"
+  }
+}
